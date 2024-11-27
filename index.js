@@ -25,7 +25,7 @@ app.use(express.json()); // Middleware to parse JSON
 app.use('/api/auth', authRoutes);
 
 // Protecting a route with role-based access control
-app.get('/api/home', protect(['Admin']), (req, res) => {
+app.get('/', (req, res) => {
     res.json({ message: "Welcome Admin!" });
 });
 
