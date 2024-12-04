@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // CORS Configuration
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://new-vrv-assignment.vercel.app'], // Allow multiple origins
+    origin: ['http://localhost:5173', 'https://new-vrv-assignment.vercel.app','https://rbac-ui-vrv.vercel.app'], // Allow multiple origins
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true, // Enable credentials sharing
 };
